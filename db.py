@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 
-engine = create_engine("postgresql+psycopg2://vkinder:12345@localhost/vkinder")        #бд vkinder с двумя столбцами: id(найденных пользователей, pkey) и id_vk(пользователя)
+engine = create_engine("postgresql+psycopg2://vkinder:12345@localhost/vkinder")        #бд vkinder с двумя столбцами: result_ids(найденных пользователей, pkey) и id_vk(пользователя)
 connection = engine.connect()
 
 def db_check():
